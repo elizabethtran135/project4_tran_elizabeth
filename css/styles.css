@@ -121,9 +121,9 @@ footer h6 {
 }
 /*---HOME---*/
 h2#underrated {
-    max-width: 501px;
-    margin: 0 4% auto;
-    padding-bottom: 6%;
+		max-width: 501px;
+    margin: 0 auto;
+    padding: 0 4% 7%;
 }
 /*---ABOUT---*/
 .about p {
@@ -287,7 +287,7 @@ header {
 		text-align: right;
 	}
 	.logo img {
-		margin: -7% 61% 2% 5%;
+		margin: -6% 61% 2% 5%;
 		background-color: darkblue;
 		border-radius: 15px;
 		width: 34%;
@@ -298,7 +298,7 @@ header {
 		display: none;
 	}
 	.top-menu {
-		margin: 2.5%;
+		margin: 0 4%;
 	}
 	ul.top-menu li {
     display: inline;
@@ -338,3 +338,29 @@ header {
 }
 }
 /*------END MEDIA QUERY 916PX---*/
+/*---HOVER---*/
+.top-menu a {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.top-menu a:hover {
+	padding: .5%;
+	font-weight: bold;
+	background-color: lightblue;
+	color: darkblue;
+	-webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.hero:hover {
+  -webkit-transform:
+scale(1.01);
+  transform: scale(1.03);
+}
