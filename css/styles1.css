@@ -8,17 +8,18 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 header {
-	background-color: #12045a;
-	max-height: 90px;
+	background-color: darkblue;
+	padding: 3% 0;
 }
-
+html, body {
+	height: 100%;
+}
 body {
 	background-image: url("../images/ocean2.png");
 	background-repeat: repeat;
 	text-align: center;
-	/*---STICKY FOOTER---*/
 	display: flex;
-	min-height: 100vh;
+  min-height: 100vh;
 	flex-direction: column;
 }
 .content {
@@ -26,9 +27,22 @@ body {
 }
 .footer {
 	flex-shrink: 0;
+}
+
+.footer {
 	position: relative;
 	width: 100%;
-	height: 129px;
+	height: 228px;
+}
+
+.waves {
+	background-image: url("../images/waves.png");
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 75px;
+	left: 0;
+	height: 58px;
+	width: 100%;
 }
 /*------HAMBURGER MENU-*/
 .hamburger{
@@ -77,13 +91,10 @@ ul.top-menu li {
  }
 
  .logo img {
-	 width: 52%;
-	 max-width: 165px;
+	 width: 65%;
 	 margin: 3% auto;
  }
- .waves img {
-	 width: 100%;
- }
+
  /*----MAIN CONTENT---*/
 main {
 	background-color: rgba(255,255,255, 0.87);
@@ -105,13 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 2% 3% 5% 3%;
 }
 
-h1 {
-	font-size: 1.75rem;
-}
-h2 {
-	font-size: 1.35rem;
-}
-
 p {
 	font-family: 'Nanum Gothic', sans-serif;
 	color: #584d7b;
@@ -122,22 +126,13 @@ p {
 }
 /*----FOOTER---*/
 footer {
-	background-color: #12045a;
+	background-color: darkblue;
 	padding-top: 4%;
 }
 footer h6 {
 	color: white;
-	margin: 1% 0 7%;
+	margin: 4% 0 7%;
 	font-weight: normal;
-}
-.waves {
-	background-image: url("../images/waves.png");
-	background-repeat: repeat-x;
-	position: absolute;
-	top: 58px;
-	left: 0;
-	height: 58px;
-	width: 100%;
 }
 /*---HOME---*/
 h2#underrated {
@@ -191,8 +186,12 @@ p.top {
 /*------START MEDIA QUERY 406PX---*/
 @media (min-width: 406PX) {
 /*----MAIN---*/
-.waves {
-	top: 57%;
+header {
+	max-height: 145px;
+}
+.logo img {
+	max-width: 326px;
+	margin:auto;
 }
 /*---HOME---*/
 	.short {
@@ -298,14 +297,13 @@ p.top {
 /*------START MEDIA QUERY 693PX---*/
 @media (min-width: 693PX) {
 	header {
-		max-height: 43px;
-		padding: 2%;
+		max-height: 40px;
 		background-color: #12045a;
 		text-align: right;
 	}
 	.logo img {
 		margin: -6% 61% 2% 5%;
-		background-color: #20347d;
+		background-color: darkblue;
 		border-radius: 15px;
 		width: 34%;
 		max-width: 300px;
@@ -355,17 +353,6 @@ p.top {
 }
 }
 /*------END MEDIA QUERY 916PX---*/
-/*------START MEDIA QUERY 1200PX---*/
-@media (min-width: 1200PX) {
-	/*---MAIN---*/
-header {
-	max-height: 58px;
-}
-footer h6 {
-	margin-top: -2%;
-}
-}
-/*------END MEDIA QUERY 1200PX---*/
 /*---HOVER---*/
 .top-menu a {
 	display: inline-block;
