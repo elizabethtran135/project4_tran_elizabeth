@@ -91,6 +91,7 @@ main {
 	max-width: 693px;
 	margin: auto;
 }
+
 main img {
  	width: 100%;
  }
@@ -145,6 +146,9 @@ h2#underrated {
     margin: 0 auto;
     padding: 0 4% 7%;
 }
+.hm {
+	padding-bottom: 32%;
+}
 /*---ABOUT---*/
 .about p {
 	max-width: 256px;
@@ -191,6 +195,9 @@ p.top {
 /*------START MEDIA QUERY 406PX---*/
 @media (min-width: 406PX) {
 /*----MAIN---*/
+.hm {
+	padding-bottom: 16%;
+}
 .waves {
 	top: 57%;
 }
@@ -238,6 +245,9 @@ p.top {
 @media (min-width: 551PX) {
 
 	/*-----HOME---*/
+	.hm {
+		padding-bottom: 4%;
+	}
 	main h1 {
 		max-width: 520px;
 		margin: auto;
